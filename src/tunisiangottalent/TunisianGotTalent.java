@@ -5,10 +5,11 @@
  */
 package tunisiangottalent;
 
-/**
- *
- * @author GTI-Laptop
- */
+import service.ReclamationService;
+import tunisiangottalent.domain.Reclamation;
+import tunisiangottalent.domain.Utilisateur;
+
+
 public class TunisianGotTalent {
 
     /**
@@ -16,6 +17,8 @@ public class TunisianGotTalent {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        ReclamationService rs=new ReclamationService();
+        rs.insert(new Reclamation(Double.NaN, new Utilisateur(), "test", "test", "test"));
     }
     
 }
