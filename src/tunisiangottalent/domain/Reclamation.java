@@ -5,7 +5,7 @@ package tunisiangottalent.domain;
 
 
 
-public class Reclamation  {
+public class Reclamation implements java.io.Serializable {
 
 	// Fields
 
@@ -13,8 +13,8 @@ public class Reclamation  {
 	private Utilisateur utilisateur;
 	private String type;
 	private String detailReclamation;
-        private String url;
-        
+        //url
+
 	// Constructors
 
 	/** default constructor */
@@ -23,12 +23,11 @@ public class Reclamation  {
 
 	/** full constructor */
 	public Reclamation(Double idReclamation, Utilisateur utilisateur,
-			String type, String detailReclamation,String url) {
+			String type, String detailReclamation) {
 		this.idReclamation = idReclamation;
 		this.utilisateur = utilisateur;
 		this.type = type;
 		this.detailReclamation = detailReclamation;
-                this.url = url;
 	}
 
 	// Property accessors
@@ -64,13 +63,5 @@ public class Reclamation  {
 	public void setDetailReclamation(String detailReclamation) {
 		this.detailReclamation = detailReclamation;
 	}
-
-        public String getUrl() {
-                return url;
-        }
-
-         public void setUrl(String url) {
-                this.url = url;
-        }
 
 }
