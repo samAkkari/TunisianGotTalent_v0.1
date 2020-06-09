@@ -16,7 +16,7 @@ public class DataSource {
       //API JDBC = JAVA DATA BASE CONNECTIVITY
     private String url="jdbc:mysql://127.0.0.1:3306/tgt";
     private String login="root";
-    private String password="root";
+    private String password="";
     
     private Connection cnx;
   //Singleton
